@@ -23,8 +23,6 @@ public class Albaran
     /**
      * Agrega un pedido al albaran
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
      */
     public void meterPedido(Pedido pedidito)
     {
@@ -46,7 +44,7 @@ public class Albaran
     /**
      * Muestra un pedido especifico del albaran
      * 
-     * @param long 
+     * @param long clavedelPedido (Clave del albarán)
      * @return devuelte el valor de la clave calvedelPedido del albaran
      */
     public void pedidoEspecifico(long clavedelPedido){
