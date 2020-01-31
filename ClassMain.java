@@ -20,7 +20,7 @@ public class ClassMain
         System.out.println("5. ver un Producto especifico");
         System.out.println("6. ver un Pedido especifico");
         System.out.println("7. salir");
-        
+        Albaran albaran = new Albaran();
         Almacen almacen = new Almacen();
         Scanner sc = new Scanner(System.in);
         int respuesta = sc.nextInt();
@@ -110,13 +110,25 @@ public class ClassMain
                 direccion = sc.next();
             }
             if(idres.equals("s")&&dire.equals("s"))
+            {
                 pedido = new Pedido(cliente,id,direccion);
+                albaran.meterPedido(pedido);
+            }
             else if(idres.equals("s")&&!dire.equals("s"))
+            {
                 pedido = new Pedido(cliente,id);
+                albaran.meterPedido(pedido);
+            }
             else if(!idres.equals("s")&&dire.equals("s"))
+            {
                 pedido = new Pedido(cliente,idrandom,direccion);
+                albaran.meterPedido(pedido);
+            }
             else if(!idres.equals("s")&&!dire.equals("s"))
+            {
                 pedido = new Pedido(cliente,idrandom);
+                albaran.meterPedido(pedido);
+            }
             System.out.println("El pedido del cliente: " + cliente);
             if(idres.equals("s"))
                 System.out.println("y id: " + id);
@@ -126,6 +138,9 @@ public class ClassMain
             break;
             case 3:
             almacen.listarProductos();
+            break;
+            case 4:
+            albaran.listarPedidos();
             break;
             case 5:
             System.out.println("Dame el codigo de barras del producto que buscas");
