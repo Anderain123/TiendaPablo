@@ -153,7 +153,13 @@ public class ClassMain
             albaran.pedidoEspecifico(sc.nextLong());
             break;
             case 7:
-            
+            System.out.println("Dame el codigo de barras del producto a cambiar");
+            long cood = sc.nextLong();
+            System.out.println("Dame el nombre nuevo del producto");
+            String nombrecito = sc.nextLine();
+            System.out.println("Dame el precio nuevo del producto");
+            float precioso = sc.nextFloat();
+            almacen.modificarProducto(cood,nombrecito,precioso);
             break;
             case 99:
             seguir = false;

@@ -46,4 +46,19 @@ public class Almacen
             } 
         }
     }
+    public void modificarProducto(long codigodebarras,String nombrenuevo,float nuevoprecio)
+    {
+        for(int i = 0;i<almacen.size();i++)
+        {
+            if(almacen.get(i).getCodigo_de_barras()==codigodebarras)
+            {
+                almacen.get(i).setNombre(nombrenuevo);
+                almacen.get(i).setPrecio(nuevoprecio);
+                System.out.println("El producto ha sido modificado a:");
+                System.out.println("Nombre_: " + almacen.get(i).getNombre() + "       Precio: " + almacen.get(i).getPrecio());
+                break;
+            } 
+        }
+        
+    }
 }
