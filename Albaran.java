@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Scanner;
 /**
  * Almacena pedidos en formato HashMap
  *
@@ -35,5 +36,8 @@ public class Albaran
         System.out.println(albaran.get(it.next()).toString());
     }
     
+    }
+    public void pedidoEspecifico(long clavedelPedido){
+        System.out.println(albaran.get(clavedelPedido).toString());
     }
 }
