@@ -19,7 +19,8 @@ public class ClassMain
         System.out.println("4. ver todos los Pedidos");
         System.out.println("5. ver un Producto especifico");
         System.out.println("6. ver un Pedido especifico");
-        System.out.println("7. salir");
+        System.out.println("7. modificar Producto");
+        System.out.println("99. salir");
         Albaran albaran = new Albaran();
         Almacen almacen = new Almacen();
         Scanner sc = new Scanner(System.in);
@@ -144,8 +145,19 @@ public class ClassMain
             break;
             case 5:
             System.out.println("Dame el codigo de barras del producto que buscas");
-            long codabuscar = sc.nextLong();
-            almacen.enseñarProducto(codabuscar);
+            
+            almacen.enseñarProducto(sc.nextLong());
+            break;
+            case 6:
+            System.out.println("Dame la clave del producto que deseas buscar");
+            albaran.pedidoEspecifico(sc.nextLong());
+            break;
+            case 7:
+            
+            break;
+            case 99:
+            seguir = false;
+            break;
         }  
     }
     }
