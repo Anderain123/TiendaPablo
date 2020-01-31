@@ -1,12 +1,12 @@
 import java.util.Scanner;
 import java.util.Random;
-public class ClassMain
+public class Menu
 {
-    public ClassMain()
+    public Menu()
     {
     }
     
-    public static void main(String[] args)
+    public void menu()
     {
         boolean seguir = true;
         while(seguir)
@@ -163,7 +163,10 @@ public class ClassMain
             break;
             case 99:
             seguir = false;
+            System.out.println("¡Hasta la vista!");
             break;
+            default:
+            System.out.println("Por favor, introduce un numero válido");
         }  
     }
     }
