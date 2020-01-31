@@ -2,8 +2,8 @@ import java.util.ArrayList;
 /**
  * Es el gestor de almacen de nuestra tienda y almacena los productos que hemos hecho.
  * 
- * @author Ander
- * @version 28/01/2020
+ * @author Ander Muñoz
+ * @version 28/01/2020 
  * @see Producto
  */
 public class Almacen
